@@ -1,0 +1,19 @@
+{
+  "name": "node-rest-utopian",
+  "version": "1.0.0",
+  "description": "a rest api for utopian ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start":"nodemon serverUtopian.js"
+  },
+  "author": "alexendre",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

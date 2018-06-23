@@ -6,8 +6,12 @@ router.get('/', function(req, res){
 	});
 });
 router.post('/', function(req, res){
+	var contribution = {
+		id : req.body.id
+	};
 	res.status(200).json({	
-		message : "Contributions was created"		
+		message : "Contributions was created",
+		contribution : contribution
 	});
 });
 router.get('/:idC', function(req, res){

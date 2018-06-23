@@ -4,21 +4,33 @@ var router = express.Router();
 
 router.get('/', function(req, res){
 	
+	var sponsor = {
+		id : req.body.id
+	};
+	
 	res.status(200).json({
 		
-		message : "Get request to /sponsors"
-		
+		message : "Get request to /sponsors",
+			
+		sponsor : sponsor	
 	});
 	
 });
 
 router.post('/', function(req, res){
 	
+	var sponsor = {
+		id : req.body.id
+	};
+	
 	res.status(200).json({
 		
-		message : "Post request to /sponsors"
+		message : "Post request to /sponsors",
+		sponsor : sponsor
 		
 	});
+	
+	
 	
 });
 
